@@ -52,9 +52,9 @@ Deployed contract: https://test-insight.bitpay.com/address/2N7ij1vUH6oRrU3fTR7bj
 8. Then User B execute the function   ``participate(uint value,uint _refundTime, bytes20 _hashedSecret,address _initiator)``
 
 where value - amount of tokens
-*_refundTime - timeout
-*_hashedSecret -secret hash whitch recived from User А
-*_initiator - Ethereum addres of User B (to which he will receive tokens)
+* _refundTime - timeout
+* _hashedSecret -secret hash whitch recived from User А
+* _initiator - Ethereum addres of User B (to which he will receive tokens)
 
 ```"10000000","8640000","0x44682a741560103c3ba162da3f6932051ce7b0c8","0x104D356415708B3Dd7C898f252471Aa34106002d"```
 
@@ -82,9 +82,11 @@ https://test-insight.bitpay.com/tx/329df2c94eb2defd9b7e203050da37b87f7d38909e26a
 User B was recive 0.1 BTC. 
 
 <h2>What is not done</h2>
-1. Our solidity contract does not suppoer ERC20 to Bitcoin swap. <br>
-2. The logic of defrosting tokens through the timeout is not made. <br>
-3. User B must do "checkcontract" from User A (check the amount and the recipient).<br>
+1. Our solidity contract does not suppoer ERC20 to Bitcoin swap. 
+
+2. The logic of defrosting tokens through the timeout is not made. 
+
+3. User B must do "checkcontract" from User A (check the amount and the recipient).
  
 <h2>What's next?</h2>
 The atomicswap technology is good for sidechain operations, ie when translating from one network to another 1:1. However for full integration different cryptocurrency it is necessary to solve the problem of where to take exchange rates.
