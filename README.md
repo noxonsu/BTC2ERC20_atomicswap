@@ -1,7 +1,7 @@
 # BTC to ERC20 atomicswap
-Crossblockchain exchange BTC to ERC20 token withour third party
+Crossblockchain exchange BTC to ERC20 token without third party
 
-# motivation
+# Motivation
 At present moment, we need a third party to change bitcoin to ethereum based tokens. With this example we will eliminate third party and make transactions absolutely fair, with no possibility to cheat. Connection of bitcoin payment service into ethereum based projects is a necessary step to involve such start-ups into real world. Because bitcoin exchange in fiat currencies is almost done question.
 
 # Previous work
@@ -44,17 +44,16 @@ Refund transaction (a485de3e50f0d01afe9e256e31ae977bf7b2afc97f62d12c6cd4738b6c1c
 Publish contract transaction? [y/N] y
 ```
 
-This operation is froze 0.1 bitcoin from buyer address on the HTLC contract: https://test-insight.bitpay.com/tx/aa1c13e5ffe937c124325693e3fae4a2ed84ee67cf07a5ee2d9f95c37fc65def
-Deployed contract: https://test-insight.bitpay.com/address/2N7ij1vUH6oRrU3fTR7bjh2ViUx5yJmPg2v
+This operation is froze 0.1 bitcoin from buyer address on the HTLC contract: https://test-insight.bitpay.com/address/2N7ij1vUH6oRrU3fTR7bjh2ViUx5yJmPg2v
 
 6. secret hash and ethereum address of User B sent to the seller (via offchain). Сertainly without a secret.
 7. User B executed erc20 function "approve" for the AtomicSwap contract address.
 8. Then User B execute the function   ``participate(uint value,uint _refundTime, bytes20 _hashedSecret,address _initiator)``
 
 where value - amount of tokens
-*_refundTime - timeout
-*_hashedSecret -secret hash whitch recived from User А
-*_initiator - Ethereum addres of User B (to which he will receive tokens)
+* _refundTime - timeout
+* _hashedSecret -secret hash whitch recived from User А
+* _initiator - Ethereum addres of User B (to which he will receive tokens)
 
 ```"10000000","8640000","0x44682a741560103c3ba162da3f6932051ce7b0c8","0x104D356415708B3Dd7C898f252471Aa34106002d"```
 
@@ -82,9 +81,9 @@ https://test-insight.bitpay.com/tx/329df2c94eb2defd9b7e203050da37b87f7d38909e26a
 User B was recive 0.1 BTC. 
 
 <h2>What is not done</h2>
-1. Our solidity contract does not suppoer ERC20 to Bitcoin swap. <br>
-2. The logic of defrosting tokens through the timeout is not made. <br>
-3. User B must do "checkcontract" from User A (check the amount and the recipient).<br>
+1. Our solidity contract does not support ERC20 to Bitcoin swap. 
+2. The logic of defrosting tokens through the timeout is not made. 
+3. User B must do "checkcontract" from User A (check the amount and the recipient).
  
 <h2>What's next?</h2>
 The atomicswap technology is good for sidechain operations, ie when translating from one network to another 1:1. However for full integration different cryptocurrency it is necessary to solve the problem of where to take exchange rates.
