@@ -1,7 +1,7 @@
 # BTC to ERC20 atomicswap
 Crossblockchain exchange BTC to ERC20 token withour third party
 
-# motivation
+# Motivation
 At present moment, we need a third party to change bitcoin to ethereum based tokens. With this example we will eliminate third party and make transactions absolutely fair, with no possibility to cheat. Connection of bitcoin payment service into ethereum based projects is a necessary step to involve such start-ups into real world. Because bitcoin exchange in fiat currencies is almost done question.
 
 # Previous work
