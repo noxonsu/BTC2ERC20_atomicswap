@@ -20,7 +20,7 @@ we studied these articles
 6. Download and synronised bitcoin core (testnet)
 7. btcatomicswap.exe --testnet --rpcuser=admin --rpcpass=*** initiate mwKCjG4XkxgrZX2b3qkF6KJHHdHCUo17Hq 1.0
 
-where "mwKCjG4XkxgrZX2b3qkF6KJHHdHCUo17Hq" the addres of token seller (User B). 
+where "mwKCjG4XkxgrZX2b3qkF6KJHHdHCUo17Hq" is the addres of token seller (User B). 
 
 User A execute:
 
