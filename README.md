@@ -44,8 +44,7 @@ Refund transaction (a485de3e50f0d01afe9e256e31ae977bf7b2afc97f62d12c6cd4738b6c1c
 Publish contract transaction? [y/N] y
 ```
 
-This operation is froze 0.1 bitcoin from buyer address on the HTLC contract: https://test-insight.bitpay.com/tx/aa1c13e5ffe937c124325693e3fae4a2ed84ee67cf07a5ee2d9f95c37fc65def
-Deployed contract: https://test-insight.bitpay.com/address/2N7ij1vUH6oRrU3fTR7bjh2ViUx5yJmPg2v
+This operation is froze 0.1 bitcoin from buyer address on the HTLC contract: https://test-insight.bitpay.com/address/2N7ij1vUH6oRrU3fTR7bjh2ViUx5yJmPg2v
 
 6. secret hash and ethereum address of User B sent to the seller (via offchain). Сertainly without a secret.
 7. User B executed erc20 function "approve" for the AtomicSwap contract address.
@@ -82,10 +81,8 @@ https://test-insight.bitpay.com/tx/329df2c94eb2defd9b7e203050da37b87f7d38909e26a
 User B was recive 0.1 BTC. 
 
 <h2>What is not done</h2>
-1. Our solidity contract does not suppoer ERC20 to Bitcoin swap. 
-
+1. Our solidity contract does not support ERC20 to Bitcoin swap. 
 2. The logic of defrosting tokens through the timeout is not made. 
-
 3. User B must do "checkcontract" from User A (check the amount and the recipient).
  
 <h2>What's next?</h2>
