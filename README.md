@@ -55,13 +55,13 @@ where value - amount of tokens
 * _hashedSecret -secret hash whitch recived from User А
 * _initiator - Ethereum addres of User B (to which he will receive tokens)
 
-```"10000000","8640000","0x44682a741560103c3ba162da3f6932051ce7b0c8","0x104D356415708B3Dd7C898f252471Aa34106002d"```
+```participate("10000000","8640000","0x44682a741560103c3ba162da3f6932051ce7b0c8","0x104D356415708B3Dd7C898f252471Aa34106002d")```
 
 Here is transaction: https://ropsten.etherscan.io/tx/0xc6f3dc9aa1feecb58cac6c18e5872a7d9076855ad472f6f5b85505dece3d61da
 
 9. User A execute function redeem(bytes32 _secret, bytes20 _hashedSecret).  
 
-```"0xd06aef2ea98a6a4907fb29679bc646f0e699ffff2fc78dbe683c94720b805015","0x44682a741560103c3ba162da3f6932051ce7b0c8"```
+```redeem("0xd06aef2ea98a6a4907fb29679bc646f0e699ffff2fc78dbe683c94720b805015","0x44682a741560103c3ba162da3f6932051ce7b0c8")```
 
 Here is: https://ropsten.etherscan.io/tx/0x78a287f35ba475848e37591d2f8091edf2dbaea637ca097781c45910b489a70f
 
