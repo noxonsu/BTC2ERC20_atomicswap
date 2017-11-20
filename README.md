@@ -1,5 +1,5 @@
 # BTC2ERC20_atomicswap
-кроссблокчейновый обмен (биткоин на токен) без третьей стороны
+Crossblockchain exchange BTC to ERC20 token withour third party
 
 # motivation
 At present moment, we need a third party to change bitcoin to ethereum based tokens. With this example we will eliminate third party and make transactions absolutely fair, with no possibility to cheat. Connection of bitcoin payment service into ethereum based projects is a necessary step to involve such start-ups into real world. Because bitcoin exchange in fiat currencies is almost done question.
@@ -8,7 +8,7 @@ At present moment, we need a third party to change bitcoin to ethereum based tok
 Подключение оплаты биткоином к проектам на основе модели токенов необходимый шаг к дальнейшей интеграции блокчейн стартапов в реальный мир, так как обмен фиатных валют на биткоин практически решенная задача
 
 # предыдущие работы
-изучен следующий опыт:
+we studied these articles
 1. https://github.com/AltCoinExchange/ethatomicswap
 2. https://github.com/decred/atomicswap
 
