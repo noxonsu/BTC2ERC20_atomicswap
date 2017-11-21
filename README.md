@@ -53,7 +53,7 @@ This operation is froze 0.1 bitcoin from buyer address on the HTLC contract: htt
 where value - amount of tokens
 * _refundTime - timeout
 * _hashedSecret -secret hash whitch recived from User А
-* _initiator - Ethereum addres of User B (to which he will receive tokens)
+* _initiator - Ethereum addres of User A (to which he will receive tokens)
 
 ```participate("10000000","8640000","0x44682a741560103c3ba162da3f6932051ce7b0c8","0x104D356415708B3Dd7C898f252471Aa34106002d")```
 
